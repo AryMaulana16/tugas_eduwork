@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Pribadi</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f4f4f4;
+      }
+
+      /* Navigation */
+      .navbar {
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 1rem;
+        flex-wrap: wrap;
+      }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+
+      /* Hero Section */
+      .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2rem;
+        align-items: center;
+        background-color: #ffffff;
+      }
+      .hero img {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 10px;
+      }
+      .hero-text {
+        padding: 1rem;
+      }
+
+      .hero button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .hero button:hover {
+        background-color: #0056b3;
+      }
+
+      /* Biodata Section */
+      .biodata {
+        background-color: #e9ecef;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .biodata h2 {
+        margin-bottom: 10px;
+      }
+
+      .biodata-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+        margin-top: 20px;
+      }
+
+      .biodata-item {
+        background-color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Portfolio Section */
+      .portfolio {
+        background-color: #fff;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-top: 20px;
+      }
+
+      .portfolio-item {
+        background-color: #f8f9fa;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .portfolio-item img {
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      /* Responsive tweaks */
+      @media (max-width: 768px) {
+        .hero {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Section 1: Menu -->
+    <nav class="navbar">
+      <a href="#header">Header</a>
+      <a href="#biodata">Biodata</a>
+      <a href="#portofolio">Portofolio</a>
+    </nav>
+
+    <!-- Section 2: Header / Hero -->
+    <section class="hero" id="header">
+      <div class="hero-text">
+        <h3>Selamat Datang di Website Saya</h3>
+        <p>Ini adalah contoh header dengan dua kolom, kolom kiri berisi teks seperti ini.</p>
+        <button>Pelajari lebih lanjut</button>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1549921296-3c92b0111d5d?fit=crop&w=500&q=80" alt="Hero Image" />
+      </div>
+    </section>
+
+    <!-- Section 3: Biodata -->
+    <section class="biodata" id="biodata">
+      <h2>About Me</h2>
+      <p>A brief introduction about myself</p>
+      <div class="biodata-grid">
+        <div class="biodata-item">
+          <p style="color: #0056b3">Full Name :</p>
+          Ujang
+        </div>
+        <div class="biodata-item">
+          <p style="color: #0056b3">Education :</p>
+          S1 Komputer
+        </div>
+        <div class="biodata-item">
+          <p style="color: #0056b3">Pekerjaan :</p>
+          Guru
+        </div>
+        <div class="biodata-item">
+          <p style="color: #0056b3">Contact:</p>
+          ujang@gmail.com
+        </div>
+        <div class="biodata-item">
+          <p style="color: #0056b3">Hobi :</p>
+          Coding
+        </div>
+        <div class="biodata-item">
+          <p style="color: #0056b3">Alamat :</p>
+          Garut
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Portofolio -->
+    <section class="portfolio" id="portofolio">
+      <h2>Portofolio</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?fit=crop&w=500&q=80" alt="Proyek 1" />
+          <h3>Proyek 1</h3>
+          <p>Deskripsi Proyek 1</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?fit=crop&w=500&q=80" alt="Proyek 2" />
+          <h3>Proyek 2</h3>
+          <p>Deskripsi Proyek 2</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?fit=crop&w=500&q=80" alt="Proyek 3" />
+          <h3>Proyek 3</h3>
+          <p>Deskripsi Proyek 3</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
